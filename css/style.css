@@ -660,6 +660,22 @@
     transition: 0.5s ease;
 }
 
+.created-by{
+    max-width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.created-by a{
+    text-decoration: none;
+    color: #00b7c2;
+}
+
+.created-by a:hover{
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 1278px){
     .portfolio-text{
         height: 50%;
@@ -990,6 +1006,10 @@
      .contact-details div h3{
          font-size: 18px;
       }
+
+      .created-by a{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -1025,5 +1045,9 @@
 
      .social-media div img{
         width: 30px;
+    }
+
+    .created-by a{
+        font-size: 12px;
     }
 }
