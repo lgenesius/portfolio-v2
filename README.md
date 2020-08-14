@@ -2,6 +2,7 @@
 This is my second portfolio.
 
 ## Link of This Project
+https://lgenesius.github.io/portfolio-v2/
 
 ## Technologies
 ▸ HTML<br>
