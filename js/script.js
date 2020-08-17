@@ -25,3 +25,17 @@ menuCollapse.forEach(item => item.addEventListener('click', function(){
         menuToggle.click();
     }
 }));
+
+const seeMore = document.querySelector('.see-more');
+const seeLess = document.querySelector('.see-less');
+const getVisible = document.querySelectorAll('.disappear');
+
+seeMore.addEventListener('click', function(){
+    getVisible.forEach(item => item.classList.toggle('disappear'));
+    seeMore.classList.toggle('disappear');
+});
+
+seeLess.addEventListener('click',function(){
+    getVisible.forEach(item => item.classList.toggle('disappear'));
+    seeMore.classList.toggle('disappear');
+});
