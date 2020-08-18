@@ -697,6 +697,17 @@
     display: none;
 }
 
+::-webkit-scrollbar{
+    width: 9px;
+    background: #1b262c;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #00b7c2;
+    border-radius: 6px;
+    
+}
+
 @media screen and (max-width: 1278px){
     .portfolio-text{
         height: 50%;
