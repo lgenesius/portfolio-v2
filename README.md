@@ -8,6 +8,6 @@ https://lgenesius.github.io/portfolio-v2/
 ▸ HTML<br>
 ▸ CSS<br>
 ▸ Javascript<br>
-▸ Text Editor : Sublime Text 3
+▸ Visual Studio Code
 
 
