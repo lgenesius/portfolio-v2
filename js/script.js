@@ -39,3 +39,17 @@ seeLess.addEventListener('click',function(){
     getVisible.forEach(item => item.classList.toggle('disappear'));
     seeMore.classList.toggle('disappear');
 });
+
+const seeMore2 = document.querySelector('.see-more-2');
+const seeLess2 = document.querySelector('.see-less-2');
+const getVisible2 = document.querySelectorAll('.disappear-2');
+
+seeMore2.addEventListener('click', function(){
+    getVisible2.forEach(item => item.classList.toggle('disappear-2'));
+    seeMore2.classList.toggle('disappear-2');
+});
+
+seeLess2.addEventListener('click',function(){
+    getVisible2.forEach(item => item.classList.toggle('disappear-2'));
+    seeMore2.classList.toggle('disappear-2');
+});

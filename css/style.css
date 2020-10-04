@@ -267,11 +267,11 @@
     margin-top: 1rem;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-gap: 1rem;
 }
 
-.about-section-skills div{
+.about-section-skills .programming-languages{
     background: #2f3e46;
     display: flex;
     align-items: center;
@@ -280,28 +280,63 @@
     padding: 20px 20px 10px 20px;
 }
 
-.about-section-skills div h4{
+.about-section-skills .grip-2{
     width: 100%;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
 }
 
-.about-section-skills div div{
+.about-section-skills .grip-2 div{
+    background: #2f3e46;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px 20px 10px 20px;
+    flex-direction: column;
+}
+
+.about-section-skills .programming-languages h4{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-section-skills .programming-languages div{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: row;
     justify-content: space-around;
 }
 
-.front-end div img, .programming-languages div img{
+.about-section-skills .grip-2 div div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.programming-languages div img{
     width: 50px;
     transition: 0.5s ease;
     margin: 10px;
 }
 
+.libraries-frameworks div img{
+    width: 60px;
+    transition: 0.5s ease;
+    margin: 10px;
+}
+
+.libraries-frameworks div .aspdotnet{
+    width: 80px;
+}
+
 .database div img{
-    width: 90px;
+    width: 80px;
     transition: 0.5s ease;
     margin: 10px;
 }
@@ -485,7 +520,7 @@
     opacity: 0.7;
 }
 
-.portfolio-section h6{
+.portfolio-section h6, .home-certificate-section h6{
     text-align: center;
     font-size: 20px;
     cursor: pointer;
@@ -497,133 +532,85 @@
     transition: 0.5s ease;
 }
 
-.portfolio-section h6:hover{
+.portfolio-section h6:hover, .home-certificate-section h6:hover{
     background: #00b7c2;
     transition: 0.5s ease;
-}
-
-.certificate-background{
-    width: 100%;
-}
-
-.certificate-section{
-    max-width: 80%;
-    margin-left: 10%;
-    text-align: center;
-}
-
-.certificate-intro{
-    padding-top: 7rem;
-}
-
-.certificate-intro h1{
-    color: #00b7c2;
-    font-size: 40px;
-}
-
-.certificate-intro p{
-    font-family: 'Monda', sans-serif;
-    opacity: 0.7;
-}
-
-.certificate-intro p::after{
-    content: '';
-    display: block;
-    height: 0;
-    width: 90px;
-    border-bottom: 4px solid #00b7c2;
-    margin: 15px auto 0 auto;
-}
-
-.certificate-image{
-    margin-top: 4rem;
-    max-width: 80%;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-}
-
-.certificate-image h3{
-    color: #008991;
-    font-size: 25px;
-}
-
-.certificate-image-details{
-    width: 100%;
-    margin-top: 3rem;
-}
-
-.certificate-image-details img{
-    width: 80%;
-}
-
-.certificate-image-details p{
-    margin-top: 0.5rem;
-}
-
-.seminar-certificate{
-    margin-top: 4rem;
-}
-
-.last-certificate{
-    padding-bottom: 2rem;
 }
 
 .home-certificate{
+    width: 100%;
+}
+
+.home-certificate-section{
     max-width: 80%;
     margin-left: 10%;
     margin-top: 14rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
 }
 
-.home-certificate h4{
-    color: #009fa7e1;
-    font-size: 25px;
-    font-family: 'Monda', sans-serif;
-}
-
-.home-certificate h1{
-    margin-top: 0.5rem;
+.home-certificate-section h1{
     color: #00b7c2;
     font-size: 40px;
 }
 
-.home-certificate p{
-    margin-top: 1rem;
-    font-size: 20px;
-    color: #ffffff;
-    opacity: 0.7;
-    font-family: 'Monda', sans-serif;
-}
-
-.home-certificate p::after{
-    content: '';
-    display: block;
-    height: 0;
-    width: 100px;
-    border-bottom: 2px solid #00b7c2;
-    margin: 20px auto 0 auto;
-}
-
-.home-certificate a{
-    width: 150px;
+.home-certificate-section h3{
+    color: #008991;
     margin-top: 2rem;
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    border: 2px solid #00b7c2;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    font-size: 20px;
-    transition: 0.5s ease;
-    font-weight: 700;
+    font-size: 25px;
 }
 
-.home-certificate a:hover{
+.home-certificate-details{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.home-certificate-content{
+    width: 100%;
+    position: relative;
+}
+
+.home-certificate-image img{
+    width: 100%;
+    height: 450px;
+}
+
+.home-certificate-content .home-certificate-core{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #1b262c;
+    opacity: 0.9;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.home-certificate-content .home-certificate-core .home-certificate-text{
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.home-certificate-text a{
+    text-decoration: none;
+    border: 2px solid #00b7c2;
     background: #00b7c2;
-    transition: 0.5s ease;
+    padding: 5px 15px;
+    margin: 15px auto;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.home-certificate-content:hover .home-certificate-core{
+    transform: scaleY(1);
 }
 
 .contact{
@@ -714,6 +701,10 @@
     display: none;
 }
 
+.disappear-2{
+    display: none;
+}
+
 ::-webkit-scrollbar{
     width: 9px;
     background: #1b262c;
@@ -757,6 +748,19 @@
 
     .other-projects-section{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-certificate-details{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home-certificate-image img{
+        height: auto;
+    }
+
+    .home-certificate-content{
+        max-width: 70%;
+        left: 15%;
     }
 }
 
@@ -815,8 +819,9 @@
         margin-top: 2rem;
     }
 
-    .certificate-image-details img{
-        width: 100%;
+    .home-certificate-content{
+        max-width: 100%;
+        left: 0;
     }
 }
 
@@ -901,7 +906,7 @@
         width: 25px;
     }
 
-    .about-section-skills{
+    .about-section-skills .grip-2{
         grid-template-columns: repeat(1,1fr);
     }
 
@@ -909,19 +914,19 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .certificate-image-details img{
-        width: 100%;
+    .home-certificate-text p, .home-certificate-text a{
+        font-size: 12px;
     }
 
-    .certificate-image-details p{
-        font-size: 14px;
+    .home-certificate-text a{
+        width: 100px;
     }
 
     .portfolio-section{
         margin-top: 10rem;
     }
 
-    .home-certificate{
+    .home-certificate-section{
         margin-top: 10rem;
     }
 
@@ -1030,55 +1035,12 @@
         font-size: 14px;
     }
 
-    .certificate-section{
-        max-width: 90%;
-        margin-left: 5%;
-    }
-
-    .certificate-intro h1{
-        font-size: 30px;
-    }
-
-    .certificate-intro p{
-        font-size: 14px;
-    }
-
-    .certificate-image h3{
-        font-size: 20px;
-    }
-
-    .certificate-image{
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-    .home-certificate{
-        max-width: 90%;
-        margin-left: 5%;
-    }
-
-    .home-certificate h4{
-        font-size: 20px;
-    }
-    
-    .home-certificate h1{
-        color: #00b7c2;
+    .home-certificate-section h1{
         font-size: 30px;
     }
     
-    .home-certificate p{
-        font-size: 16px;
-        color: #ffffff;
-    }
-
-    .home-certificate a{
-        width: 120px;
-        font-size: 16px;
-        background: #00b7c2;
-    }
-
-    .home-certificate a:hover{
-        background: #00b7c2;
+    .home-certificate-section h3{
+        font-size: 20px;
     }
 
     .contact-section{
@@ -1098,10 +1060,20 @@
         font-size: 14px;
     }
 
-    .portfolio-section h6{
+    .portfolio-section h6, .home-certificate-section h6{
         font-size: 16px;
         width: 120px;
         background: #00b7c2;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .home-certificate-text p, .home-certificate-text a{
+        font-size: 8px;
+    }
+
+    .home-certificate-text a{
+        width: 80px;
     }
 }
 
@@ -1122,10 +1094,6 @@
         margin-top: 1rem;
     }
 
-    .certificate-image-details p{
-        font-size: 12px;
-    }
-
     .contact-section{
         margin-top: 12rem;
         max-width: 90%;
@@ -1142,5 +1110,15 @@
 
     .created-by a{
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 312px){
+    .home-certificate-text p, .home-certificate-text a{
+        font-size: 6px;
+    }
+
+    .home-certificate-text a{
+        width: 70px;
     }
 }
