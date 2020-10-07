@@ -465,6 +465,7 @@
     box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
     height: 400px;
     border-radius: 20px;
+    animation: showNav 500ms ease-in-out both;
 }
 
 .other-projects-image{
@@ -526,10 +527,14 @@
     cursor: pointer;
     border: 2px solid #00b7c2;
     width: 150px;
-    margin: 4rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     padding: 10px;
     border-radius: 20px;
     transition: 0.5s ease;
+}
+
+.link-show{
+    text-decoration: none;
 }
 
 .portfolio-section h6:hover, .home-certificate-section h6:hover{
@@ -568,6 +573,7 @@
 .home-certificate-content{
     width: 100%;
     position: relative;
+    animation: showNav 500ms ease-in-out both;
 }
 
 .home-certificate-image img{
@@ -713,6 +719,11 @@
 ::-webkit-scrollbar-thumb{
     background: #00b7c2;
     border-radius: 6px;
+}
+
+@keyframes showNav {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @media screen and (max-width: 1278px){
